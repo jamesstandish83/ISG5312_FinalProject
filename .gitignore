@@ -1,0 +1,23 @@
+# Raw sequencing data
+raw_data/
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+
+# Alignment files
+*.bam
+*.sam
+*.bai
+
+# Variant files
+*.vcf
+*.vcf.gz
+
+# Logs
+*.log
+logs/
+
+# Temporary / system
+*.tmp
+.DS_Store
