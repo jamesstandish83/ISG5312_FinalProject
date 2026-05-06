@@ -27,7 +27,6 @@ QC_Outputs/
 Rqtl_Outputs/
 
 # Keep the large marker archive out of Git
-Rqtl_Inputs/All_Markers.tsv.zip
 
 # Keep generated outputs out of Git
 QC_Outputs/
