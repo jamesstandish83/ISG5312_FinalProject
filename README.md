@@ -5,9 +5,9 @@ This project recreates and extends the fire blight resistance mapping workflow f
 
 Peil A, Hübert C, Wensing A, Horner M, Emeriewen OF, Richter K, Wöhner T, Chagné D, Orellana-Torrejon C, Saeed M, Troggio M, Stefani E, Gardiner SE, Hanke MV, Flachowsky H, Bus VGM. *Mapping of fire blight resistance in Malus ×robusta 5 flowers following artificial inoculation.* BMC Plant Biology. 2019;19:532. https://doi.org/10.1186/s12870-019-2154-7
 
-The original study identified a major fire blight resistance QTL in *Malus ×robusta 5* and reported that the resistance signal was consistent across inoculation modes, including flower and shoot inoculation. This project reproduces the analysis goal in R using **R/qtl** and **ASMap** instead of the JoinMap/MapQTL workflow used in the paper. citeturn730037view0turn730037view3turn730037view2
+The original study identified a major fire blight resistance QTL in *Malus ×robusta 5* and reported that the resistance signal was consistent across inoculation modes, including flower and shoot inoculation. This project reproduces the analysis goal in R using **R/qtl** and **ASMap** instead of the JoinMap/MapQTL workflow used in the paper. 
 
-The biological question is whether fire blight resistance in this apple population is linked to one or more genomic regions and whether the strongest signal agrees with the published result. citeturn730037view0
+The biological question is whether fire blight resistance in this apple population is linked to one or more genomic regions and whether the strongest signal agrees with the published result.
 
 ## Workflow summary
 The project is organized into two scripts:
@@ -177,21 +177,6 @@ If the scripts fail, check the following first:
 4. Whether the genotype file has the expected GenomeStudio structure.
 5. Whether all required R packages are installed.
 
-## GitHub update workflow
-To update the repository after editing the scripts and README locally:
-
-```bash
-cd /path/to/ISG5312_FinalProject
-git status
-git add README.md scripts/GenomeStudio_OutPut_QC.R scripts/FireBlight_Rqtl_ASMap_Cleaned_Workflow.R
-git add data/raw data/processed results docs logs
-git commit -m "Update fire blight QC and QTL workflow"
-git push origin main
-```
-
-GitHub documents `git push` as the command used to send local commits to the remote repository, commonly with `git push origin main`, and the repository README is intended to explain what the project does, how to get started, and how to use it. citeturn730037view4turn730037view5
-
-If you prefer the GitHub website instead of the command line, open the repository, use **Add file** or the pencil icon to edit `README.md`, and then commit the changes through the web interface. citeturn546190search3turn546190search6
 
 ## Final project reflection
 If I were starting over, I would:
@@ -199,7 +184,7 @@ If I were starting over, I would:
 - move all scripts to relative paths so the project runs from the repository root
 - place raw data, cleaned data, and final results into separate folders
 - document every package dependency in a single setup section
-- save a small workflow diagram alongside the README
+- Create a new small workflow diagram alongside the README since I switvched projects
 - keep a short changelog of each analysis decision, especially around F2 handling, ASMap map replacement, and MQM fallback behavior
 
-That would make the project easier to reproduce, easier to review, and easier to extend.
+I think that would make the project easier to reproduce, easier to review, and easier to extend.
