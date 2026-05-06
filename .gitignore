@@ -21,3 +21,8 @@ logs/
 # Temporary / system
 *.tmp
 .DS_Store
+
+# Local data and outputs
+QC_Outputs/
+Rqtl_Inputs/
+Rqtl_Outputs/
